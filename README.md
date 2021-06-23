@@ -6,10 +6,6 @@ See M. Durand and E. Guesnet, “An efficient Cellular Potts Model algorithm tha
 ##How to install:
 
 
-Uncompress the tarfile:             uncompress cashpotts.tar.Z
-
-Extract the tarfile:                tar xvof cashpotts.tar
-
 Go into the library directory:      cd lib
 
 Make the library:                   make all
@@ -19,9 +15,6 @@ Read the install entry in the makefile to set the include and lib directory wher
 Then:
 To install libcash.a and cash.h:    make install
 
-Go into the examples directory:     cd ../examples
-
-Check the makefile, and edit it so it finds the CASH library.
 
 Then:
 
