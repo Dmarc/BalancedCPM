@@ -1,0 +1,40 @@
+/****affichage****/
+
+movieinterval	200 // intervalle de temps entre 2 images
+writinginterval	200 // intervalle de temps entre 2 écritures des valeurs
+dispersetime	250
+affichage		2
+
+//initialisation
+
+
+fillfactor		1.05
+init_config		0
+ncol			100
+nrow			100
+line_to_area		11.3	//scaling entre pixel et longueur
+
+polydispersity	1
+
+//temperature and tempering
+
+
+temperature_min		10
+temperature_max		10
+
+annealing			1	//1=annealing, sinon parallel tempering
+annealing_time		50
+
+
+//potts
+
+target_area 		3000
+area_constraint		3000
+maxtypes		3
+J01			5
+J11			5
+J02			5
+J12			5
+J22			5
+neighbour_energy			20
+totaltime		10000
