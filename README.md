@@ -18,10 +18,11 @@ To install libcash.a and cash.h:    make install
 
 Then:
 
+cd ../balancedcpm
 make potts
 
 Some extra libraries, like x11-devel and png-devel, can be required.
 
 ##How to run:
 
-./potts param dest_folder
+./potts params dest_folder
