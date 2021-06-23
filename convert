@@ -1,0 +1,24 @@
+if test -r $1
+then
+  rm -fr scratch
+  
+  mkdir scratch
+  mkdir scratch/lib
+  mkdir scratch/examples
+  
+  for i in lib/*.c
+  do
+    sed -f $1 $i > scratch/$i
+    mv scratch/$i $i
+  done 
+  
+  for i in examples/*.c
+  do
+    sed -f $1 $i > scratch/$i
+    mv scratch/$i $i
+  done 
+  
+  rm -r scratch
+else
+  echo no such sedfile $1
+fi
